@@ -17,7 +17,7 @@ public class Main {
 
         AutomatedSystem system = new AutomatedSystem(factory);
 
-        Product product = new Product("Widget");
+        Product product = new Product("Smartphone");
 
         Scanner scanner = new Scanner(System.in);
         while (true) {

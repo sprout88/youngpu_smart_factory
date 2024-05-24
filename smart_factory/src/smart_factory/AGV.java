@@ -21,7 +21,7 @@ public class AGV extends FactoryComponent {
     }
 
     public void moveProduct(Product product) {
-        if (random.nextDouble() < 0.5) {
+        if (random.nextDouble() < 0.1) { // AGV fail to move product
             product.setLocation("Machine Front");
             System.out.println("AGV " + id + " moved product " + product.getName() + " to Machine Front.");
         } else {
