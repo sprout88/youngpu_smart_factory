@@ -43,7 +43,7 @@ public class Sensor extends FactoryComponent {
 
     public void testProduct(Product product) {
         Random random = new Random();
-        boolean complete = random.nextDouble() < 0.5;
+        boolean complete = random.nextDouble() < 0.01;
         product.setComplete(complete);
         if (complete) {
             System.out.println("Sensor " + id + " marked product " + product.getName() + " as complete.");
